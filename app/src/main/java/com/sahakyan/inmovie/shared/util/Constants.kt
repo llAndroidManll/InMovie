@@ -1,4 +1,4 @@
-package com.sahakyan.inmovie.domain.util
+package com.sahakyan.inmovie.shared.util
 
 object Constants {
 

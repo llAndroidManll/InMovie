@@ -1,4 +1,4 @@
-package com.sahakyan.inmovie.domain.util
+package com.sahakyan.inmovie.domain.utils
 
 sealed class Resource<T>(val data: T? = null, val message: String? = null) {
     class Success<T>(data: T?): Resource<T>(data)

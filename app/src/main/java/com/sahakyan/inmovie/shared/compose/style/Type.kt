@@ -1,4 +1,4 @@
-package com.sahakyan.inmovie.presentation.ui.theme
+package com.sahakyan.inmovie.shared.compose.style
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
