@@ -4,6 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import com.sahakyan.inmovie.navigation.AppNavHost
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -13,7 +16,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-
+            val navController = rememberNavController()
+            AppNavHost(
+                navController = navController
+            )
         }
     }
 }
