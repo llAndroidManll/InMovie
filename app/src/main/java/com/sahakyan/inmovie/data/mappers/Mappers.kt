@@ -4,6 +4,7 @@ import com.sahakyan.inmovie.data.entity.shared.PopularDTO
 import com.sahakyan.inmovie.data.entity.shared.PopularDataDTO
 import com.sahakyan.inmovie.domain.data.PopularData
 import com.sahakyan.inmovie.domain.data.PopularMovie
+import com.sahakyan.inmovie.shared.util.Constants
 
 // * Mapper functions (Convertor) from DTO files (from data layer) to to Data (in domain layer)
 
@@ -27,7 +28,7 @@ fun PopularDataDTO.toPopularData(): PopularMovie {
     val originalTitle = this.originalTitle
     val originalLanguage = this.originalLanguage
     val popularity = this.popularity
-    val posterPath = this.posterPath
+    val posterPath = Constants.IMAGE_BASE_URL.plus(this.posterPath)
     val releaseDate = this.releaseDate
     val title = this.title
     val voteAverage = this.voteAverage

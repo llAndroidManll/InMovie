@@ -1,7 +1,5 @@
 package com.sahakyan.inmovie.domain.data
 
-import com.google.gson.annotations.SerializedName
-
 data class PopularMovie(
     val adult: Boolean = false,
 
